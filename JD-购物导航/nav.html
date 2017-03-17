@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>练习1</title>
+	<style type="text/css">
+		body,nav,div,p{
+			margin: 0;
+		}
+
+		#nav{
+			width: 990px;
+			height: 40px;
+			margin: 0 auto;
+			line-height: 40px;
+			background: #e64336;
+
+		}
+
+		#classify{
+			width: 210px;
+			height: 40px;
+			background: #cd2a2c;
+			text-align: left;
+			float: left;
+		}
+
+		#classify>a{
+			font-size: 14px;
+			font-weight: bold;
+			margin-left: 10px;
+			color: #fff;
+			float: left;
+			text-decoration: none;
+		}
+
+		#classify>b{
+			float: right;
+			width:20px;
+			height: 20px;
+			margin-top: 10px;
+			margin-right: 10px;
+			background: url(images/iconlist_2.png) no-repeat -66px 0px;
+		}
+
+		#nav #classify_right li{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			width: 110px;
+			height: 40px;
+			line-height: 40px;
+			float: left;
+			text-align: center;
+		}
+
+
+		#nav #classify_right li a{
+			font-weight: bold;
+			color: #fff;
+			text-decoration: none;
+		}
+
+		#nav #classify_right li:hover{
+			background: #bd2a2c;
+		}
+
+		#classify_bottom_box{
+			width: 990px;
+			height: 412px;
+			margin: 0 auto;
+		}
+
+		#classify_bottom{
+			margin: 0;
+			padding: 0;
+			padding-top: 5px;
+			width: 210px;
+			box-sizing: border-box;
+			height: 410px;
+			border: 2px solid #cd2a2c;
+			border-top: 0px;
+			list-style: none;
+		}
+		/*实现列表项的样式以及鼠标悬停在链接上的变化*/
+		/*这边的p是class_bottom>li的代理*/
+		#classify_bottom li>p{
+			width: 186px;
+			height: 30px;
+			line-height: 30px;
+			border-top: 1px solid transparent; 
+			border-bottom: 1px solid #fff;
+			background: #fafafa;
+			padding-left:10px;
+			margin-right: 10px;
+
+		}
+
+		#classify_bottom li>p:hover{
+			background: #fff;
+			border-top:  1px solid #dcdcdc;
+			border-bottom:  1px solid #dcdcdc;
+			position: relative;
+			z-index: 200;
+		}
+
+		#classify_bottom li a{
+			font-size: 14px;
+			text-decoration: none;
+			color: #000;
+		}
+		/*列表设置为相对定位*/
+		#classify_bottom{
+			position: relative;
+		}
+		/*子弹出框*/
+		#sub_classify_box{
+			width: 715px;
+			height: 360px;
+			margin-top: 1px; 
+			background: #fff;
+			border: 1px solid #ccc;
+			position: absolute;
+			top: 0px;
+			left: 195px;/*195=186+10(padding-left)-1(border-left)*/
+			z-index: 100;
+		}
+
+		#goods_box{
+			position: absolute;
+			width: 400px;
+			height: 350px;
+			box-sizing:border-box;
+			border: 1px solid #ccc;
+			top: 5px;
+			left: 5px;
+		}
+
+		#messages_box{
+			position:absolute;
+			width: 220px;
+			height: 340px;
+			box-sizing: border-box;
+			border: 1px solid #ccc;
+			top: 5px;
+			right: 5px;
+		}
+
+		#close_button{
+			position: absolute;
+			width: 25px;
+			height: 25px;
+			background: url(images/close.jpg);
+			top: 0px;
+			right: -25px;
+		}
+
+		#close_button:focus{
+			
+		}
+
+		#publish_company{
+			margin: 0px;
+			padding: 0px;
+			list-style: none;
+			position: absolute;
+			width: 210px;
+			height: 170px;
+			border: 1px solid transparent;
+			box-sizing: border-box;
+			bottom: 10px;
+			left: 5px;
+			cursor: pointer;
+		}
+
+		#publish_company li{
+			margin-top: 5px;
+			padding-left: 2px;
+			color: #696969;
+			font-size: 14px;
+		}
+
+		#publish_company li.header{
+			color: #f00;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+
+	</style>
+</head>
+<body>
+	<nav id="nav">
+		<div id="classify">
+			<a href="#">全部商品分类</a>
+			<b></b>
+		</div>
+		<!-- 导航部分 -->
+		<ul id="classify_right">
+			<li><a href="#">首页</a></li>
+			<li><a href="#">服装城</a></li>
+			<li><a href="#">食品</a></li>
+			<li><a href="#">团购</a></li>
+			<li><a href="#">夺宝岛</a></li>
+			<li><a href="#">闪购</a></li>
+			<li><a href="#">金融</a></li>
+		</ul>
+	</nav>
+	<!-- 全部分类下拉框部分 -->
+	<div id="classify_bottom_box">
+		<ul id="classify_bottom">
+			<li>
+				<p><a href="#">图书、音像、数字商品</a></p>
+			</li>
+			<li>
+				<p><a href="#">家用电器</a></p>
+				<div id="sub_classify_box">
+					<div id="goods_box"></div>
+					<div id="messages_box">
+						<ul id="publish_company">
+							<li class="header">推荐品牌出版商/书店</li>
+							<li>中华书局</li>
+							<li>人民邮电出版社</li>
+							<li>上海世纪出版股份有限公司</li>
+							<li>电子工业出版社</li>
+							<li>三联书店</li>
+							<li>浙江少年儿童出版社</li>
+						</ul>
+					</div>
+					<div id="close_button"></div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JD-注册表</title>
+</head>
+	<style type="text/css">
+		body,div,p,{
+			margin:0;
+		}
+
+		#container{
+			width: 1010px;
+			height: 670px;
+			background-color: #f2f2f2;
+		}
+
+		#content{
+			width: 990px;
+			height: 538px;
+			margin: 62px 10px 10px 10px;
+			background-color: #fff;
+		}
+
+		#content form span{
+			color: #f00;
+		}
+		#content form p{
+			float: left;
+		}
+
+		#content div.username{
+			color: #9c9c9c;
+		}
+
+		#content div.password{
+			color: #9c9c9c;
+			clear: both;
+		}
+
+		#content div.chk-password{
+			color: #9c9c9c;
+			clear: both;
+		}
+
+		#content div.chk-phone{
+			color: #9c9c9c;
+			clear: both;
+		}
+
+		#content div.chk-sms{
+			color: #9c9c9c;
+			clear: both;
+		}
+
+
+		#content div.user-agreement{
+			clear: both;
+		}
+
+		#content div.log-out{
+			clear: both;
+		}
+
+		#content div.username p>input{
+			width: 270px;
+			height: 38px;
+			border: 1px solid #9c9c9c;
+			padding: 0;
+			background: url(images/user.jpg) no-repeat 98% center;
+		}
+
+		#content div.password p>input{
+			width: 270px;
+			height: 38px;
+			border: 1px solid #9c9c9c;
+			padding: 0;
+			background: url(images/pwd.jpg) no-repeat 98% center;
+		}
+
+		#content div.chk-password p>input{
+			width: 270px;
+			height: 38px;
+			border: 1px solid #9c9c9c;
+			padding: 0;
+			background: url(images/pwd.jpg) no-repeat 98% center;
+		}
+
+		#content div.chk-phone p>input{
+			width: 270px;
+			height: 38px;
+			border: 1px solid #9c9c9c;
+			padding: 0;
+			background: url(images/phone.jpg) no-repeat 98% center;
+		}
+
+		#content div.chk-sms p>input{
+			width: 132px;
+			height: 38px;
+			border: 1px solid #9c9c9c;
+			padding: 0;
+		}
+		
+		#content p.p1-210{
+			width: 210px;
+			height: 40px;
+			text-align: right;
+			line-height: 40px;
+		}
+
+		#content p.bg-bd{
+			width: 250px;
+			height: 38px;
+			margin: 16px 0px 16px 6px;
+			padding-left: 2px; 
+			border: 1px solid #ccc;
+			background-color: #f2f2f2;
+			color: #000;
+			font-size:12px;
+			line-height: 38px;
+			text-align: left;
+		}
+		
+		#get_test{
+			width: 105px;
+			height: 38px;
+			margin-left: 2px;
+			color: #9c9c9c;
+		}
+		
+		.user-agreement{
+			width: 243px;
+			margin-left: 210px;
+			font-size: 12px;
+		}
+		.log-out>p{
+			width: 270px;
+			height: 36px;
+			background: url(images/regist_btn.jpg);
+			border: 1px solid transparent;
+			margin-left: 210px;
+		}
+
+		.log-out>p:hover{
+			width: 270px;
+			height: 36px;
+			background: url(images/regist_btn_hove.jpg);
+			border: 1px solid transparent;
+			margin-left: 210px;
+		}
+		.img{
+			width: 180px;
+			height: 180px;
+			background: url(images/reg_phone.jpg);
+			float: right;
+			clear: both;
+			margin-top: -473px;
+			margin-right: 39px;
+
+		}
+
+	</style>
+<body>
+	<div id="container">
+		<!--头部部分-->
+		<header>
+			<img src="images/jd_logo.png">
+			<img src="images/welcome.png">
+		</header>
+		<!--主体部分-->
+		<section>
+			<div id="content">
+				<form method="post" action="" enctype="">
+					<div class="username">
+						<p class="p1-210"><span>*</span>用户名：</p>
+						<p><input type="text" name="txtUsername" maxlength="20px"></p>
+						<p class="bg-bd">4-20为字母、数字、汉字及'-'、'_'组合</p>
+					</div>
+					<div class="password">
+						<p class="p1-210"><span>*</span>密码：</p>
+						<p><input type="password" name="txtUserpwd" maxlength="20px"></p>
+						<p class="bg-bd">6-20位字符，建议字母、数字和符号</p>
+					</div>
+					<div class="chk-password">
+						<p class="p1-210"><span>*</span>请确认密码：</p>
+						<p><input type="password" name="txtUserpwd" maxlength="20px"></p>
+						<p class="bg-bd">请再次输入密码</p>
+					</div>
+					<div class="chk-phone">
+						<p class="p1-210"><span>*</span>验证手机：</p>
+						<p><input type="text" name="txtUsername"></p>
+						<p class="bg-bd">完成验证后，可以使用该手机找回</p>
+					</div>
+					<div class="chk-sms">
+						<p class="p1-210"><span>*</span>短信验证码：</p>
+						<p><input type="text" name="txtUsername"></p>
+						<p><button name="getTest" id="get_test">获取短信验证</button></p>
+					</div>
+					<div  class="user-agreement">
+						<p>
+							<input type="checkbox" name="chkAgree" id="chkAgree"><label for="chkAgree">我已同意并阅读</label>
+							<a href="#"><<京东用户注册协议>></a>
+						</p>
+					</div>
+					<!--按钮部分-->
+					<div class="log-out">
+						<p></p>
+					</div>
+					<!--快速注册图片部分-->
+					<div class="img">
+						<p></p>
+					</div>	
+				</form>
+			</div>
+	        </section>
+	</div>
+</body>
+</html>

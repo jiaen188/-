@@ -1,0 +1,292 @@
+面包屑导航条*/
+.bread-crumb{
+    height: 25px;
+    margin-left: 10px;
+    border: 0;
+}
+.bread-crumb b{
+    font-size: 20px;
+}
+.bread-crumb  span{
+    padding: 2px;
+}
+.bread-crumb a:nth-child(2){
+    margin-left: 4px;
+}
+/*product_intro*/
+#product_intro{
+    float: left;
+}
+#main:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#product_intro #preview{
+    float: left;
+    margin: 10px 0;
+   /* border: 1px solid #000;
+    box-sizing: border-box;*/
+}
+#preview div.top-preview{
+    width: 350px;
+    height: 350px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    background: url(../images/my/images/preview_01.jpg);
+}
+#preview div.small-preview{
+    float: left;
+}
+#preview div.small-preview li{
+    float: left;
+}
+#preview div.small-preview li{
+    width: 50px;
+    height: 50px;
+    border: 1px solid
+    #ddd;
+    padding: 1px;
+}
+#preview div.small-preview li:hover{
+     width: 50px;
+    height: 50px;
+    border: 2px solid
+    #e4393c;
+    padding: 0;
+}
+#preview div.small-preview ul li:first-child{
+    width: 17px;
+    height: 54px;
+    border: 0;
+    padding: 0;
+    background: url(../images/background_iconlist_1.png) no-repeat -70px -4px;
+}
+
+#preview div.small-preview ul li:last-child{
+    width: 17px;
+    height: 54px;
+    border: 0;
+    padding: 0;
+    background: url(../images/background_iconlist_1.png) no-repeat -131px -4px;
+}
+#preview div.small-preview ul li:last-child:hover{
+    width: 17px;
+    height: 54px;
+    border: 0;
+    padding: 0;
+    background: url(../images/background_iconlist_1.png) no-repeat -148px -4px;
+}
+
+#preview div.small-preview ul li:not(:first-child){
+    margin-left: 8px;
+}
+/*detail产品信息样式*/
+#detail{
+    width: 850px;
+    height: 416px;
+    float: right;
+    margin-top: 10px;
+    padding-left: 12px;
+    border: 0;
+}
+#detail>h1 span{
+    display: block;
+    color: #e4393c;
+}
+/**产品信息*/
+#detail{
+    /*宽度，高度，右浮动*/
+    width:850px;
+    height:416px;
+    float:right;
+}
+#detail>h1 span{
+    display:block;
+    color:#E4393C;
+}
+
+/* 详细信息*/
+#summary{
+    border-top:1px dotted #ddd;
+    margin-top:10px;
+    padding-top:10px;
+}
+#summary li>p{
+    /*左浮动，宽度，文本右对齐，字体:simsun*/
+    float:left;
+    width:72px;
+    text-align:right;
+    font-family:simsun;
+}
+#summary li div.content{
+    float:left;
+}
+#summary a{
+    color:#005aa0;
+}
+#summary li{
+    /*高度，行高，上下内边距*/
+    height:24px;
+    line-height:24px;
+    padding:3px 0;
+}
+/*京东价*/
+#summary_price b{
+    /*颜色，文字大小*/
+    color:#E4393C;
+    font-size:18px;
+}
+/*商品评价*/
+#summary_grade span{
+    /*76*15*/
+    /*行内块，宽度，高度，背景，右外边距*/
+    display:inline-block;
+    width:76px;
+    height:15px;
+    background:url(../images/background_iconlist_1.png) no-repeat -10px -130px;
+    position:relative;
+    top:2px;
+    margin-right:3px;
+}
+/*配送至*/
+#summary_store h3{
+    /*取消加粗，背景颜色，边框*/
+    font-weight:normal;
+    background:#fff;
+    border:1px solid #ddd;
+    font-size:12px;
+    /*左右内边距*/
+    padding:0 5px;
+}
+#summary_store h3 b{
+    /*行内块，宽度，高度，背景，位置*/
+    display:inline-block;
+    width:10px;
+    height:7px;
+    background:url(my/images/background_iconlist_1.png) no-repeat 0 -20px;
+    margin-left:5px;
+}
+#summary_store h3:hover{
+    border-bottom:2px solid #fff;
+}
+#store_select{
+    float:left;
+    margin-right:3px;
+}
+/*choose_area*/
+#detail #choose_area{
+    border-top:1px dotted #ddd;
+    width: 600px;
+    height: 124px;
+    margin-top: 0; 
+    position: relative;
+    padding: 10px 0 0 0;
+}
+#detail #choose_area li p{
+    width:72px;
+    height: 30px;
+    line-height: 30px;
+    text-align:right;
+    font-family:simsun;
+}
+#detail #choose_area li:nth-child(1){
+    margin-bottom: 10px;
+}
+/*薰衣草*/
+#choose_area li#choose_color u{
+    display: inline-block;
+    width: 74px;
+    height: 29px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    padding: 1px;
+    text-decoration: none;
+    position: absolute;
+    top: 11px;
+    left: 72px;
+
+}
+#choose_area li#choose_color u:hover{
+    border: 2px solid #e4393c;
+    padding: 0;
+}
+#choose_area li#choose_color u b{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    vertical-align: middle;
+    background: url(../images/background_iconlist_1.png) no-repeat -215px -3px;
+}
+/*玫瑰*/
+#choose_area li#choose_color i{
+    display: inline-block;
+    width: 97px;
+    height: 29px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    padding: 1px;
+    text-decoration: none;
+    position: absolute;
+    top: 11px;
+    left: 153px;
+}
+#choose_area li#choose_color i:hover{
+    border: 2px solid #e4393c;
+    padding: 0;
+}
+#choose_area li#choose_color i b{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    vertical-align: middle;
+    text-decoration: none;
+    background: url(../images/background_iconlist_1.png) no-repeat -185px -3px;
+}
+/*购买数量*/
+#detail li#choose_count u{
+    display:inline-block;
+    width: 15px;
+    height: 15px;
+    background: url(../images/background_iconlist_1.png) no-repeat -40px -55px;
+    position: absolute;
+    left: 72px;
+    top: 60px;
+}
+#detail li#choose_count i{
+    display:inline-block;
+    width: 36px;
+    height: 22px;
+    background: url(../images/background_iconlist_1.png) no-repeat -208px -55px;
+    position: absolute;
+    left: 92px;
+    top: 55px;
+}
+#detail li#choose_count b{
+    display:inline-block;
+    width: 15px;
+    height: 15px;
+    background: url(../images/background_iconlist_1.png) no-repeat -16px -55px;
+    position: absolute;
+    left: 133px;
+    top: 60px;
+}
+/*两个按钮*/
+#detail #choose_area #shopping_basket{
+    width: 136px;
+    height: 37px;
+    background: url(../images/background_iconlist_1.png) no-repeat 0 -79px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+#detail #choose_area #in_attention{
+    width: 74px;
+    height: 37px;
+    background: url(../images/background_iconlist_1.png) no-repeat -138px -79px;
+    position: absolute;
+    bottom: 0;
+    left: 144px;
+}

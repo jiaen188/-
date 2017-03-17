@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>京东晒物单</title>
+	<style type="text/css">
+		body,div,tr,td{
+			margin: 0;
+		}
+		body{
+
+		}
+		#discuss{
+			width: 1000px;
+			margin: 50px;
+		}
+		#mt{
+			height: 30px;
+			border: 1px solid #dcdcdc;
+			background-color:#f7f7f7;
+			border-top: 2px solid #a5a5a5;
+
+		}
+		#mt p{
+			margin: 0px;
+			padding: 0 15px;
+			float: left;
+		}
+		#mt .to-top{
+			height: 36px;
+			margin: -6px;
+			background: #fff;
+			border-top: 2px solid #f00;
+			border-left: 1px solid #dfdfdf;
+			border-right: 1px solid #dfdfdf;
+		}
+		#mt .to-top{
+			color:#e4393c;
+		}
+		#mt p>a{
+			display:block;
+			height: 30px;
+			line-height: 30px;
+			padding:0 10px;
+			text-decoration: none;
+			color: #3879d9;
+		}
+		#mt p>a:hover{
+			color: #e4393c;
+		}
+		#discuss_content{
+
+			border-bottom: 1px solid #ddd;
+
+		}
+		#discuss_content #discuss_data{
+			width: 1000px;
+			color: #999;
+		}
+		#discuss_data th{
+			color: #82868b;
+			padding:10px;
+			border-bottom: 1px solid #dfdfdf; 
+		}
+		#discuss_content td.pic>i{
+			padding:1px 10px;
+			background: url(image/iconlist_1.png) no-repeat center;
+			background-position: -110px -220px;
+		}
+		#discuss_content td.pic1>i{
+			padding:1px 10px;
+			background: url(image/iconlist_1.png) no-repeat center;
+			background-position: -152px -220px;
+		}
+		#discuss_data .col1{
+			text-align: left;
+		}
+		#discuss_data tr{
+			text-align: center;
+		}
+		#discuss_data td{
+			padding:10px;
+			border-bottom: 1px dotted #dfdfdf;
+		}
+		#discuss_data a{
+			text-decoration: none;
+			color: #3879d9;
+		}
+		#discuss_data a:hover{
+			text-decoration:underline;
+		    color: #3879d9;
+		}
+		#footer_content p.no-1{
+			float: left;
+			color:#656565;
+		}
+		#footer_content p.no-2{
+			float: right;
+			color:#656565;
+		}
+		#footer_content p>a{
+			text-decoration: none;
+			color: #3879d9;
+		}
+		#clear{
+			clear: both;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="discuss">
+		<div id="mt">
+			<p><a href="#">网友讨论圈</a></p>
+			<p class="to-top"><a href="#">晒单帖</a></p>
+			<p><a href="#">讨论帖</a></p>
+			<p><a href="#">问答帖</a></p>
+			<p><a href="#">圈子帖</a></p>
+		</div>
+		<div id="discuss_content">
+			<table id="discuss_data">
+				<thead>
+					<tr>
+						<th class="col1">主题</th>
+						<th>回复/浏览</th>
+						<th>作者</th>
+						<th>时间</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="pic col1"><i></i><a href="#">好大一瓶，不错</a></td>
+						<td>0/0</td>
+						<td><a href="#">2001年冬天</a></td>
+						<td>2014-11-19</td>
+					</tr>
+					<tr>
+						<td class="pic1 col1"><i></i><a href="#">洗衣液超级划算，活动给力</a></td>
+						<td>0/0</td>
+						<td><a href="#">xpx2001</a></td>
+						<td>2014-11-19</td>
+					</tr>	
+					<tr>
+						<td class="pic1 col1"><i></i><a href="#">洗衣液超级划算，活动给力</a></td>
+						<td>0/0</td>
+						<td><a href="#">xpx2001</a></td>
+						<td>2014-11-19</td>
+					</tr>
+					<tr>
+						<td class="pic col1"><i></i><a href="#">好大一瓶，不错</a></td>
+						<td>0/0</td>
+						<td><a href="#">2001年冬天</a></td>
+						<td>2014-11-19</td>
+					</tr>				
+				</tbody>
+			</table>
+			<div id="footer_content">
+				<p class="no-1">有什么问题与其他用户讨论&nbsp;&nbsp;<a href="#">[发表帖子]</a></p>
+				<p class="no-2">共900个话题&nbsp;&nbsp;<a href="#">浏览全部话题>></a></p>
+				<!--浮动后的父元素高度变为了0，在这边加一个空div恢复高度-->
+				<div id="clear"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
